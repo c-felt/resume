@@ -3,61 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Claire Felt Resume</title>
+  <title>Claire Felt - Resume</title>
   <style>
+    /* Full page centering */
     body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: flex-start;
       flex-direction: column;
-      min-height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      padding: 2rem;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Container for content */
+    .container {
+      max-width: 900px;
+      width: 90%;
+      margin: 2rem auto;
       text-align: center;
     }
 
     h1 {
       margin-bottom: 1rem;
-      color: #333;
+      font-size: 2rem;
+      font-weight: 600;
     }
 
+    /* PDF viewer styling */
     iframe {
       width: 100%;
-      max-width: 900px;
       height: 600px;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      background-color: white;
     }
 
+    /* Subtle download button */
     a.button {
       display: inline-block;
       margin-top: 1rem;
       padding: 10px 20px;
-      background-color: #0070f3;
+      background-color: #555; /* dark gray */
       color: white;
       text-decoration: none;
       border-radius: 6px;
-      font-weight: bold;
+      font-weight: 500;
       transition: background-color 0.3s ease;
     }
 
     a.button:hover {
-      background-color: #005bb5;
+      background-color: #444; /* slightly darker gray on hover */
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      iframe {
+        height: 400px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Claire Felt - Resume</h1>
+  <div class="container">
+    <h1>Claire Felt - Resume</h1>
 
-  <!-- PDF Viewer -->
-  <iframe src="Resume of Claire Felt.pdf" title="Claire Felt Resume"></iframe>
+    <!-- PDF Viewer -->
+    <iframe src="Resume%20of%20Claire%20Felt.pdf" title="Claire Felt Resume"></iframe>
 
-  <!-- Download Button -->
-  <a href="Resume of Claire Felt.pdf" class="button" target="_blank" download>
-    View & Download Resume
-  </a>
+    <!-- Download / View button -->
+    <a href="Resume%20of%20Claire%20Felt.pdf" class="button" target="_blank" download>
+      View & Download Resume
+    </a>
+  </div>
 </body>
 </html>
